@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Food Waste Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="https://media.istockphoto.com/id/1384532150/vector/recycle-symbol-inside-circle-with-leaves-zero-waste-concept.jpg?s=612x612&w=0&k=20&c=lQPT8cj_dpkQBxa1G4Y6RzDz5vLog6OmWERx-vGpF_Y=" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">Login</a>
+                <a href="signup.html" class="btn signup-btn active">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="signup">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Join us today and be a part of our mission to reduce food waste and make a positive impact on the environment. Registering is quick and easy, and will give you access to all the features of our platform.</p>
+
+            <div class="signup-form">
+                <form action="signup_process.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <label for="role">Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="donor">Donor</option>
+                        <option value="recipient">Recipient</option>
+                        <option value="volunteer">Volunteer</option>
+                    </select>
+
+                    <button type="submit" class="submit-btn" id="submit">Sign Up</button>
+                </form>
+                <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:support@foodwastemanagement.com">support@foodwastemanagement.com</a></p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Greenway Lane, Suite 100, Sustainable City, SC 12345</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <a href="https://facebook.com/foodwastemanagement" target="_blank" class="social-icon">Facebook</a>
+                <a href="https://twitter.com/foodwastemanage" target="_blank" class="social-icon">Twitter</a>
+                <a href="https://instagram.com/foodwastemanagement" target="_blank" class="social-icon">Instagram</a>
+            </div>
+        </div>
+        <p>&copy; 2024 [Your System Name]. All rights reserved.</p>
+    </footer>
+    <script type="module" src="index.js" defer></script>
+</body>
+</html>
